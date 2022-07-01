@@ -5,7 +5,7 @@ const yoils = ["일", "월", "화", "수", "목", "금", "토"];
 function working() {
   const date = new Date();
   let year = date.getFullYear();
-  let month = date.getMonth();
+  let month = date.getMonth() + 1;
   let day = date.getDate();
   let yoil = date.getDay();
   let hour = String(date.getHours()).padStart(2, "0");
